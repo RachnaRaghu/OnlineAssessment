@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+	</head>
+	
+	<body style = "background-color:cyan;">
+	<div>
+		<div id="heading">
+			<h1>Registration</h1>
+			<br>
+		</div>
+		<br>
+		<div id="content">
+		<form action="/registration/do" method="post">
+			<table>
+			<tr><td><label>First Name</label></td>
+			<td><input type="text" name="firstname" id="firstname" pattern="[A-Za-z]{1,30}" required/></td></tr>
+			<tr><td><label>Last Name</label></td>
+			<td><input type="text" name="lastname" id="lastname" pattern="[A-Za-z]{1,30}" required/></td></tr>
+			<tr><td><label>Email ID</label></td>
+			<td><input type="email" name="email" id="email" required/></td></tr>
+			<tr><td><label>Password</label></td>
+			<td><input type="password" name="password" id="password" pattern=".{8,}" required/></td></tr>
+			<tr><td><input type="submit" id="register" value="REGISTER" /></td></tr>
+		</table>
+		</form>
+		</div>
+	</div>
+	</body>
+</html>
